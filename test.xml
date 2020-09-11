@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<IDTagDesign xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ver="1.0" root-path="c:\test_plan" name="qq">
+	<elements>
+
+		<img preview-only="true">
+			<position X="0" Y="0" Width="54" Height="86"/>
+			<fit>Stretch</fit>
+			<bound-img-design-background/>
+		</img>
+
+		<!-- IVANOV-RUS -->
+		<text>
+			<position X="1" Y="30.5" Width="32" Height="3"/>
+			<text-options halign="left" valign="center" wrap="noWrap" />
+			<font name="GT Eesti Pro Display Bold" bold="true" italic="false" underline="false" size="2.5"  color="black"/>
+			<bound-text value="last_name" to-upper="true"/>
+		</text>
+		
+
+                 <!-- IVANOV-EN -->
+		<text>
+			<position X="1" Y="33" Width="32" Height="3"/>
+			<text-options halign="left" valign="center" wrap="noWrap" />
+			<font name="GT Eesti Pro Display Thin" bold="true" italic="false" underline="false" size="2.5"  color="black"/>
+			<bound-text value="last_name_latin" to-upper="true"/>
+		</text>
+
+		<!-- ALEXANDR-RUS -->
+		<text>
+			<position X="1" Y="36.5" Width="32" Height="3"/>
+			<text-options halign="left" valign="center" wrap="noWrap" />
+			<font name="GT Eesti Pro Display Bold" bold="true" italic="false" underline="false" size="2.5"  color="black"/>
+			<bound-text value="first_name" to-upper="true"/>
+		</text>
+
+               <!-- ALEXANDR-EN -->
+		<text>
+			<position X="1" Y="39" Width="32" Height="3"/>
+			<text-options halign="left" valign="center" wrap="noWrap" />
+			<font name="GT Eesti Pro Display Thin" bold="true" italic="false" underline="false" size="2.5"  color="black"/>
+			<bound-text value="first_name_latin" to-upper="true"/>
+		</text>
+
+<!-- ORGANIZATIONS -->
+		<text>
+			<position X="1" Y="41" Width="25" Height="7"/>
+			<text-options halign="left" valign="center" wrap="noWrap" />
+			<font name="GT Eesti Pro Display Bold" bold="true" italic="false" underline="false" size="1.8"  color="black"/>
+			<bound-text value="organizations" to-upper="true"/>
+		</text>
+
+		<!-- PHOTO -->
+		<img>
+			<position X="28" Y="30" Width="19.5" Height="26"/>
+			<fit>Stretch</fit>
+			<bound-img value="photo"/> 
+                 </img>
+      
+<!-- zones -->
+		<array-pad margin-x="0.01" margin-y="0.01" cells-x="1" cells-y="1" show-grid="false" draw-cells="icons" grid-color="black" grid-width="1">
+			<position X="2" Y="46" Width="20" Height="10"/>
+			<text-options halign="center" valign="bottom" wrap="noWrap" />
+			<font name="Arial" bold="false" italic="true" underline="false" size="4"/>
+			<zone-list>
+				<cells>
+					<cell idx="1" id="3"/>
+    				</cells>
+			</zone-list>
+		</array-pad>
+
+<!-- zones -->
+		<array-pad margin-x="0.01" margin-y="0.01" cells-x="4" cells-y="1" show-grid="false" draw-cells="icons" grid-color="black" grid-width="1">
+			<position X="1" Y="48.3" Width="40" Height="8"/>
+			<text-options halign="center" valign="bottom" wrap="noWrap" />
+			<font name="Arial" bold="false" italic="true" underline="false" size="4"/>
+			<zone-list>
+				<cells>
+					<cell idx="1" id="1"/>
+                                        <cell idx="2" id="19"/>
+                                        <cell idx="3" id="5"/>
+                                        <cell idx="4" id="4"/>
+    				</cells>
+			</zone-list>
+		</array-pad>
+		
+	</elements>
+	<size>
+		<Width>54</Width>
+		<Height>86</Height>
+	</size>
+	<!-- ask-barcode - -->
+	<!-- write-barcode-to-tag -->
+	<workflow ask-barcode="false" write-barcode-to-tag="false"/>
+	<!--workflow ask-barcode="false"/-->	
+</IDTagDesign>
